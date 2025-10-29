@@ -76,10 +76,10 @@ body {
   transform: translateY(-2px);
 }
 
-/* === Meal Grid (3 per row layout) === */
+/* === Meal Grid === */
 .meal-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 3 per row responsive */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
   justify-content: center;
   align-items: start;
@@ -87,20 +87,30 @@ body {
   background-color: #181a20;
 }
 
-/* Meal Card */
+/* If there's only one meal, center it nicely */
+.meal-grid:has(.meal-card:only-child) {
+  justify-content: center;
+  grid-template-columns: 1fr;
+}
+
+/* === Meal Card === */
 .meal-card {
   background-color: #20232a;
   border-radius: 15px;
   overflow: hidden;
+  width: 300px;
+  margin: 0 auto;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Hover Effect */
 .meal-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   box-shadow: 0 6px 20px rgba(255, 127, 0, 0.3);
 }
 
@@ -120,8 +130,8 @@ body {
   color: #fff;
   background-color: #1f2229;
   margin: 0;
+  text-align: center;
 }
-
 /* === RECIPE PAGE STYLES === */
 
 .recipe-container {
@@ -255,3 +265,4 @@ body {
     font-size: 0.95rem;
   }
 }
+
