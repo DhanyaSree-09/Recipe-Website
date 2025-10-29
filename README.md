@@ -47,7 +47,7 @@ It is **user-friendly** and designed with a **clean interface** for smooth navig
 ## 📍 **Project Link**
 
 You can run and explore the project locally here 👇  
-👉 **(https://ll77hg-3000.csb.app/)**  
+👉 **https://ll77hg-3000.csb.app/**  
 
 ---
 
