@@ -1,0 +1,257 @@
+/* === GLOBAL RESET === */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #181a20; /* Dark background */
+  color: #f5f5f5;
+  text-align: center;
+}
+
+/* === FRONT PAGE (Mainpage) === */
+
+/* App title */
+.app-title,
+.mainpage h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+/* Center layout */
+.mainpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #22252c;
+  border-radius: 50px;
+  padding: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto 40px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 14px 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 50px 0 0 50px;
+}
+
+.search-bar input::placeholder {
+  color: #b0b0b0;
+}
+
+/* Search Button */
+.search-bar button {
+  background-color: #ff7f00;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #ff9933;
+  transform: translateY(-2px);
+}
+
+/* === Meal Grid (3 per row layout) === */
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 3 per row responsive */
+  gap: 25px;
+  justify-content: center;
+  align-items: start;
+  padding: 30px 50px;
+  background-color: #181a20;
+}
+
+/* Meal Card */
+.meal-card {
+  background-color: #20232a;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Hover Effect */
+.meal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 127, 0, 0.3);
+}
+
+/* Meal Image */
+.meal-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 3px solid #ff8c00;
+}
+
+/* Meal Name */
+.meal-card h3 {
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #1f2229;
+  margin: 0;
+}
+
+/* === RECIPE PAGE STYLES === */
+
+.recipe-container {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  color: #222;
+}
+
+.recipe-title {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.recipe-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 14px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Area Tag */
+.recipe-area {
+  font-size: 1.1rem;
+  margin-top: 18px;
+  margin-bottom: 30px;
+  color: #444;
+  background-color: #f4f4f4;
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Instructions Section */
+.recipe-info {
+  margin-top: 30px;
+  text-align: justify;
+  background: #fff8e1;
+  padding: 25px;
+  border-radius: 15px;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #333;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* YouTube Button */
+.youtube-section {
+  margin-top: 35px;
+}
+
+.youtube-btn {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+.youtube-btn:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+}
+
+/* Google Map */
+.map-container {
+  margin-top: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  .mainpage h1 {
+    font-size: 2rem;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .search-bar input {
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .search-bar button {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .recipe-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .recipe-title {
+    font-size: 1.8rem;
+  }
+
+  .recipe-info {
+    padding: 18px;
+    line-height: 1.6;
+  }
+
+  .youtube-btn {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+}
