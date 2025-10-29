@@ -1,50 +1,54 @@
-🍽️ Recipe Finder App
+# 🍽️ **Recipe Finder App**
 
-The Recipe Finder App is a simple and interactive web application built using React and TheMealDB API. It allows users to explore various recipes, search for specific meals, and view detailed cooking instructions and ingredients.
+The **Recipe Finder App** is a simple and interactive web application built using **React** and **TheMealDB API**.  
+It allows users to explore various recipes, search for specific meals, and view detailed cooking instructions and ingredients.
 
-🌟 Overview
+---
 
-This project helps users discover new dishes and learn how to cook them easily. The app provides meal images, categories, ingredients, and preparation methods in an organized way. It is user-friendly and designed with a clean interface for smooth navigation.
+## 🌟 **Overview**
 
-🚀 Features
+This project helps users discover new dishes and learn how to cook them easily.  
+The app provides **meal images, categories, ingredients, and preparation methods** in an organized way.  
+It is **user-friendly** and designed with a **clean interface** for smooth navigation.
 
-Search meals by name
+---
 
-View meal images, categories, and ingredients
+## 🚀 **Features**
 
-Get step-by-step cooking instructions
+- 🔍 **Search meals by name**  
+- 🖼️ **View meal images, categories, and ingredients**  
+- 📖 **Get step-by-step cooking instructions**  
+- 🌎 **Explore dishes from different regions**  
+- 🗺️ **Interactive map to show meal origins** (using React-Leaflet)  
+- 💻 **Responsive and visually appealing layout**
 
-Explore dishes from different regions
+---
 
-Interactive map to show meal origins (using React-Leaflet)
+## 🛠️ **Tech Stack**
 
-Responsive and visually appealing layout
+- **Frontend:** React (Vite setup)  
+- **API Used:** TheMealDB  
+- **Styling:** CSS (Flexbox + Grid)  
+- **Mapping Library:** React-Leaflet and Leaflet  
+- **Data Handling:** Fetch API / Axios  
 
-🛠️ Tech Stack
+---
 
-Frontend: React (with Vite setup)
+## 💡 **Learning Outcomes**
 
-API Used: TheMealDB
+- Learned how to **fetch and display data from an external API**  
+- Improved understanding of **React components and state management**  
+- Gained experience in **API integration** for real-world projects  
+- Enhanced **frontend design and layout** skills using CSS  
+- Understood how to **add interactive map elements**
 
-Styling: CSS with Flexbox and Grid
+---
 
-Mapping Library: React-Leaflet and Leaflet
+## 📍 **Project Link**
 
-Data Handling: Fetch API or Axios
+You can run and explore the project locally here 👇  
+👉 **[http://localhost:3000/](http://localhost:3000/)**  
 
-💡 Learning Outcomes
+---
 
-Learned how to fetch and display data from an external API
-
-Improved understanding of React components and state management
-
-Gained knowledge of API integration in real-world applications
-
-Enhanced frontend design and layout skills using CSS
-
-Understood how to add interactive elements like maps
-
-📍 Project Link
-
-You can run and explore the project locally here:
-👉 http://localhost:3000/
+✨ *Built with passion using React & TheMealDB API.*
