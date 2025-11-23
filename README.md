@@ -47,7 +47,7 @@ It is **user-friendly** and designed with a **clean interface** for smooth navig
 ## 📍 **Project Link**
 
 You can run and explore the project locally here 👇  
-👉 **http://localhost:3000/**  
+👉 **https://verdant-sable-1e62c0.netlify.app/**  
 
 ---
 
